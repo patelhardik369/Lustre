@@ -72,9 +72,22 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-7 sm:flex-row">
-          <p className="font-mono text-[0.66rem] uppercase tracking-wider text-paper/50">
-            © {new Date().getFullYear()} LUSTRE Auto Spa — All rights reserved
-          </p>
+          <div className="flex flex-col items-center gap-1.5 sm:items-start">
+            <p className="font-mono text-[0.66rem] uppercase tracking-wider text-paper/50">
+              © {new Date().getFullYear()} LUSTRE Auto Spa — All rights reserved
+            </p>
+            <p className="font-mono text-[0.66rem] uppercase tracking-wider text-paper/40">
+              Made by 👨‍💻{" "}
+              <a
+                href="https://www.hardikpatel.site/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-flame"
+              >
+                Hardik Patel
+              </a>
+            </p>
+          </div>
           <div className="flex items-center gap-6 font-mono text-[0.66rem] uppercase tracking-wider text-paper/50">
             <a href="#" className="transition-colors hover:text-paper">Privacy</a>
             <a href="#" className="transition-colors hover:text-paper">Terms</a>
